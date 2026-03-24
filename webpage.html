@@ -1,0 +1,118 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Vibes</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; }
+        header { background-color: rgba(0, 123, 255, 0.9); color: white; text-align: center; padding: 40px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        nav { background-color: #333; color: white; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #007bff; }
+        .hero { background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; height: 500px; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); position: relative; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); }
+        .hero-content { position: relative; z-index: 1; text-align: center; }
+        section { padding: 40px 20px; max-width: 1200px; margin: 0 auto; background: white; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .service { background: #f9f9f9; padding: 20px; border-radius: 8px; text-align: center; transition: transform 0.3s; }
+        .service:hover { transform: translateY(-5px); }
+        .service img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .gallery img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; transition: transform 0.3s; }
+        .gallery img:hover { transform: scale(1.05); }
+        .testimonials { display: flex; flex-wrap: wrap; justify-content: space-around; }
+        .testimonial { background: #e9ecef; padding: 20px; margin: 10px; border-radius: 8px; width: 300px; text-align: center; }
+        footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+        button { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vacation Vibes</h1>
+        <p>Your ultimate destination for luxurious Dubai adventures</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Discover the Magic of Dubai</h2>
+            <p>From desert safaris to skyscrapers, let us plan your perfect trip.</p>
+            <button onclick="alert('Booking feature coming soon!')">Book Now</button>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Our Premium Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Flight Bookings">
+                <h3>Flight Bookings</h3>
+                <p>Seamless flight reservations with competitive rates. Enjoy priority boarding and flexible options.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Hotel Reservations">
+                <h3>Hotel Reservations</h3>
+                <p>Luxury accommodations in Dubai's finest hotels, from beachfront resorts to city-center suites.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Tour Packages">
+                <h3>Custom Tour Packages</h3>
+                <p>Tailored itineraries including desert safaris, Burj Khalifa visits, and cultural experiences.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <h2>Dubai Highlights Gallery</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Burj Khalifa">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Dubai Marina">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Desert Safari">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Palm Jumeirah">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Dubai Mall">
+            <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Gold Souk">
+            <img src="https://img.nh-hotels.net/BnZJ2j/yDDEzp/original/NH_Collection_Dubai_The_Palm_Pool_View_Evening.jpg?output-quality=80&amp;resize=1110:*&amp;composite-to=center,center|1110:380&amp;background-color=white" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1013px; height: 191px; margin: 0px; width: 558px;" alt="Services NH Collection Dubai The Palm - Dubai" jsname="kn3ccd">
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Dubai Phata made our trip unforgettable! The desert safari was a highlight."</p>
+                <cite>- RAJ GAWARE , London </cite>
+            </div>
+            <div class="testimonial">
+                <p>"Excellent service and attention to detail. Highly recommend for Dubai trips."</p>
+                <cite>- KRUSHNA , USA</cite>
+            </div>
+            <div class="testimonial">
+                <p>"From booking to return, everything was seamless. The Burj Khalifa tour was amazing."</p>
+                <cite>- MAYUR , India</cite>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@Vacation Vibes.com | Phone: +91 920925xxxx | Address: Dubai Marina,canda corner , INDIA </p>
+        <form action="#" method="post">
+            <input type="text" placeholder="Your Name" required=""><br><br>
+            <input type="email" placeholder="Your Email" required=""><br><br>
+            <textarea placeholder="Your Message" rows="5" required=""></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>© 2026 Vacation Vibes. All rights reserved. | Follow us on social media.</p>
+    </footer>
+
+</body></html>
